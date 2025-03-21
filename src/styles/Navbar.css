@@ -1,0 +1,37 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    float: left;
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff4d4d;
+  }

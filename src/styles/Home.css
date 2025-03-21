@@ -1,0 +1,93 @@
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    max-width: 800px;
+    margin: 100px auto 40px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .slide-left {
+    background-color: #ff4d4d;
+    transform: translateX(-100vw);
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+  .slide-right {
+    background-color: #4d79ff;
+    transform: translateX(100vw);
+    animation: slideInRight 1s ease forwards;
+  }
+  
+  @keyframes slideInLeft {
+    0% { transform: translateX(-100vw); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes slideInRight {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(0); }
+  }
+  
+  .glow:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .mission {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+  
+  .mission.visible {
+    opacity: 1;
+    max-height: 200px;
+  }
+  
+  .mission.hidden {
+    display: block;
+  }
